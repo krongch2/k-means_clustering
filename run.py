@@ -122,6 +122,6 @@ def k_means(k, X, tol=1e-3):
     return centroids_all, labels_all, change_all
 
 if __name__ == '__main__':
-    X, thrue_labels = sklearn.datasets.make_blobs(n_samples=500, centers=3, n_features=2, random_state=0)
+    X, true_labels = sklearn.datasets.make_blobs(n_samples=500, centers=3, n_features=2, random_state=0)
     centroids_all, labels_all, change_all = k_means(3, X)
     plot_multi(X, labels_all, centroids_all, change_all)
